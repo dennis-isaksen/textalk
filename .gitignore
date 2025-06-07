@@ -9,12 +9,12 @@
 *.wasm
 
 # Rust/Cargo related files
-/target/
-/pkg/
+target/
+pkg/
 
 # Node.js related files
-/node_modules/
-/dist/
+/*//node_modules/
+/*//dist/
 
 # Logs
 *.log
@@ -40,11 +40,11 @@ __pycache__/
 *.swo
 
 # Ignore the build output directory
-/build/
+build/
 
 # Ignore the wasm-pack build output directory
-/pkg/
+pkg/
 
 # Ignore the SSL certificates
-/key.pem
-/cert.pem
+key.pem
+cert.pem

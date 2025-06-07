@@ -1,5 +1,5 @@
 import { updateUiAfterProcess } from './ui.js';
-import { capture_and_ocr } from '/pkg/text_talk.js';
+import { capture_and_ocr } from '../../pkg/text_talk.js';
 
 export async function processImage(file, detectionModel, recognitionModel, ocrResult, selectedLanguage) {
     const canvas = document.getElementById('canvas');

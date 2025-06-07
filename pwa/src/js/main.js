@@ -1,6 +1,6 @@
 import { init_camera, fetchModel, updateUiBeforeProcess } from './ui.js';
 import { processImage } from './ocr.js';
-import init from '/pkg/text_talk.js';
+import init from '../../pkg/text_talk.js';
 
 let selectedLanguage = {code: "da-DK"};
 let detectionModel = null;
@@ -138,7 +138,7 @@ async function run() {
 run();
 
 // Register the service worker
-navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+navigator.serviceWorker.register('./service-worker.js', { scope: './' })
     .then((registration) => {
         console.log('Service worker registered:', registration);
     })

@@ -1,11 +1,11 @@
 const CACHE_NAME = 'text-talk-v0.1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/pkg/text_talk.js',
-  '/pkg/text_talk_bg.wasm',
-  '/icon-192x192.png',
-  '/icon-512x512.png',
+  './',
+  './index.html',
+  './pkg/text_talk.js',
+  './pkg/text_talk_bg.wasm',
+  './icon-192x192.png',
+  './icon-512x512.png',
   'https://huggingface.co/dennis-isaksen/ocrs-finetuned-additional-lang/resolve/main/ocrs-detection-en-da-2025-05-13.rten?download=true',
   'https://huggingface.co/dennis-isaksen/ocrs-finetuned-additional-lang/resolve/main/ocrs-recognition-en-da-2025-05-24.rten?download=true'
 ];
