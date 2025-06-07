@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TexTalk</title>
+    <link rel="manifest" href="../pwa/manifest.json">
+    <meta name="theme-color" content="#000000">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        #video, #canvas {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            z-index: 10;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            z-index: 20;
+        }
+
+        button {
+            padding: 6px 6px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            border-radius: 48px;
+            font-size: 40px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .language-selector {
+            padding: 6px 6px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            border-radius: 48px;
+            font-size: 40px;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-align: center;
+        }
+
+        .spinner {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            margin: -25px 0 0 -25px;
+            border: 6px solid rgba(255, 255, 255, 0.3);
+            border-top: 6px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            z-index: 2000;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button id="capture-button">📸</button>
+        <button id="resume-button" style="display:none;">▶️</button>
+        <button id="switch-camera-button">🔄</button>
+        <button id="install-button" style="display:none;">⬇️</button>
+        <button id="speak-all-button" disabled style="filter: grayscale(100%); cursor: not-allowed;">🗣️</button>
+        <select id="language-selector" class="language-selector">
+            <option value="da-DK" selected>🇩🇰</option>
+            <option value="sv-SE">🇸🇪</option>
+            <option value="no-NO">🇳🇴</option>
+            <option value="de-DE">🇩🇪</option>
+            <option value="fr-FR">🇫🇷</option>
+            <option value="es-ES">🇪🇸</option>
+            <option value="en-US">🇬🇧</option>
+        </select>
+    </div>
+    <p id="ocr-result"></p>
+    <div id="spinner" class="spinner" style="display: none;"></div>
+    <video id="video" autoplay playsinline></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
