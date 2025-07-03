@@ -6,8 +6,8 @@ const urlsToCache = [
   './pkg/text_talk_bg.wasm',
   './icon-192x192.png',
   './icon-512x512.png',
-  'https://huggingface.co/dennis-isaksen/ocrs-finetuned-additional-lang/resolve/main/ocrs-detection-en-da-2025-05-13.rten?download=true',
-  'https://huggingface.co/dennis-isaksen/ocrs-finetuned-additional-lang/resolve/main/ocrs-recognition-en-da-2025-05-24.rten?download=true'
+  'https://huggingface.co/dennis-isaksen/ocrs-finetuned-additional-lang/resolve/main/ocrs-detection-multi_lang-2025-06-25.rten?download=true',
+  'https://huggingface.co/dennis-isaksen/ocrs-finetuned-additional-lang/resolve/main/ocrs-recognition-multi-lang_2025-07-03.rten?download=true'
 ];
 
 self.addEventListener('activate', event => {
