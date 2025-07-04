@@ -24,3 +24,4 @@ rten = "0.13.1"
 rten-tensor = "0.13.1"
 rten-imageproc = "0.13.1"
 anyhow = "1.0.95"
+lingua = { version = "1.6", default-features = false, features = ["english", "danish", "swedish", "nynorsk", "german", "french", "spanish", "italian", "portuguese"] }
