@@ -6,6 +6,7 @@ use ocrs::{OcrEngine, OcrEngineParams, ImageSource, TextLine, TextItem};
 use rten::Model;
 use serde::Serialize;
 use serde_json::json;
+use lingua::{Language, LanguageDetectorBuilder};
 
 #[derive(Serialize)]
 struct Point {
@@ -99,4 +100,22 @@ pub async fn capture_and_ocr(detection_model_bytes: Vec<u8>, recognition_model_b
         .collect();
     let result = serde_json::Value::Array(line_items).to_string();
     Ok(JsValue::from_str(&result))
+}
+
+#[wasm_bindgen]
+pub async fn detect_language(text: String) -> Result<String, JsValue> {
+    let languages = &[
+        Language::English,
+        Language::Danish,
+        Language::Swedish,
+        Language::Nynorsk,
+        Language::German,
+        Language::French,
+        Language::Spanish,
+        Language::Italian,
+        Language::Portuguese,
+    ];
+    let detector = LanguageDetectorBuilder::from_languages(languages).build();
+    let language = detector.detect_language_of(&text).ok_or_else(|| JsValue::from_str("No language detected"))?;
+    Ok(language.to_string())
 }

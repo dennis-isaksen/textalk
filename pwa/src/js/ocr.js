@@ -1,5 +1,5 @@
 import { updateUiAfterProcess } from './ui.js';
-import { capture_and_ocr } from '../../pkg/text_talk.js';
+import { capture_and_ocr, detect_language } from '../../pkg/text_talk.js';
 
 export async function processImage(file, detectionModel, recognitionModel, ocrResult, selectedLanguage) {
     const canvas = document.getElementById('canvas');
@@ -23,9 +23,19 @@ export async function processImage(file, detectionModel, recognitionModel, ocrRe
             const result = await capture_and_ocr(detectionModel, recognitionModel);
             ocrResult.result = JSON.parse(result); // Assign the result to the global variable
 
-            // Display OCR result
-            const ocrResultElement = document.getElementById('ocr-result');
-            ocrResultElement.innerText = ocrResult.result.map(line => line.text).join('\n');
+            // detect the language of the OCR result
+            const detectedLnguageCode = await detect_language(ocrResult.result);
+            if (language) {
+                selectedLanguage.code = detectedLnguageCode;
+
+                // Update language selector
+                const languageSelector = document.getElementById('language-selector');
+                languageSelector.value = selectedLanguage.code;
+            } else {
+                // Fallback to a default language if detection fails
+                selectedLanguage = { code: 'en' }; // Default to English
+            }
+            
             
             // Draw rectangles and text on the canvas
             context.strokeStyle = 'rgba(0, 255, 0, 1)'; // Green border
