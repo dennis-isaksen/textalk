@@ -3,7 +3,7 @@ name: GitHub Pages CI/CD
 on:
   push:
     branches:
-      - feature/github_pages
+      - main
   pull_request:
     branches:
       - main
