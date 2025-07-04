@@ -1,5 +1,5 @@
 import { init_camera, fetchModel, updateUiBeforeProcess } from './ui.js';
-import { processImage } from './ocr.js';
+import { processImage, getCanvasClickListener } from './ocr.js';
 import init from '../../pkg/text_talk.js';
 
 let selectedLanguage = {code: "da-DK"};
@@ -70,6 +70,7 @@ async function run() {
                 captureButton.style.cursor = 'pointer';
 
                 // Remove the click event listener from the canvas
+                const canvasClickListener = getCanvasClickListener();
                 if (canvasClickListener) {
                     canvas.removeEventListener('click', canvasClickListener);
                 }

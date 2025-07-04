@@ -1,6 +1,11 @@
 import { updateUiAfterProcess } from './ui.js';
 import { capture_and_ocr } from '../../pkg/text_talk.js';
 
+let canvasClickListener = null;
+export function getCanvasClickListener() {
+    return canvasClickListener;
+}
+
 export async function processImage(file, detectionModel, recognitionModel, ocrResult, selectedLanguage) {
     const canvas = document.getElementById('canvas');
     const context = canvas.getContext('2d');
@@ -53,7 +58,7 @@ export async function processImage(file, detectionModel, recognitionModel, ocrRe
             });
 
             // Define the click event listener function
-            const canvasClickListener = (event) => {
+            canvasClickListener = (event) => {
                 const rect = canvas.getBoundingClientRect();
 
                 // Calculate the scaling factor between the canvas's internal size and its displayed size
