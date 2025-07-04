@@ -1,0 +1,11 @@
+/home/runner/work/textalk/textalk/pwa/target/wasm32-unknown-unknown/release/deps/include_dir-1c6571aeeacbb34b.d: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/dir.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/dir_entry.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/file.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/../README.md
+
+/home/runner/work/textalk/textalk/pwa/target/wasm32-unknown-unknown/release/deps/libinclude_dir-1c6571aeeacbb34b.rlib: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/dir.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/dir_entry.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/file.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/../README.md
+
+/home/runner/work/textalk/textalk/pwa/target/wasm32-unknown-unknown/release/deps/libinclude_dir-1c6571aeeacbb34b.rmeta: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/dir.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/dir_entry.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/file.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/../README.md
+
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/lib.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/dir.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/dir_entry.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/file.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/include_dir-0.7.4/src/../README.md:

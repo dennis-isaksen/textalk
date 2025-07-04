@@ -1,0 +1,11 @@
+/home/runner/work/textalk/textalk/pwa/target/wasm32-unknown-unknown/release/deps/rten_vecmath-2728c26f178baa4f.d: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/erf.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/exp.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/softmax.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/tanh.rs
+
+/home/runner/work/textalk/textalk/pwa/target/wasm32-unknown-unknown/release/deps/librten_vecmath-2728c26f178baa4f.rlib: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/erf.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/exp.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/softmax.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/tanh.rs
+
+/home/runner/work/textalk/textalk/pwa/target/wasm32-unknown-unknown/release/deps/librten_vecmath-2728c26f178baa4f.rmeta: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/erf.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/exp.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/softmax.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/tanh.rs
+
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/lib.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/erf.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/exp.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/softmax.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rten-vecmath-0.11.0/src/tanh.rs:

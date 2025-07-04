@@ -1,0 +1,24 @@
+{
+  "name": "text_talk",
+  "type": "module",
+  "collaborators": [
+    "Dennis Amdi Skov Isaksen <dennis.isaksen@gmail.com>"
+  ],
+  "description": "A simple OCR app to read aloud text",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dennis-isaksen/textalk"
+  },
+  "files": [
+    "text_talk_bg.wasm",
+    "text_talk.js",
+    "text_talk.d.ts"
+  ],
+  "main": "text_talk.js",
+  "types": "text_talk.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
