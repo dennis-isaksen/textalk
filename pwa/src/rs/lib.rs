@@ -116,6 +116,9 @@ pub async fn detect_language(text: String) -> Result<String, JsValue> {
         Language::Portuguese,
     ];
     let detector = LanguageDetectorBuilder::from_languages(languages).build();
-    let language = detector.detect_language_of(&text).ok_or_else(|| JsValue::from_str("No language detected"))?;
-    Ok(language.to_string())
+    let language = detector
+        .detect_language_of(&text)
+        .ok_or_else(|| JsValue::from_str("No language detected"))?;
+    let code = language.iso_code_639_1().to_string();
+    Ok(code)
 }
