@@ -15,7 +15,7 @@ The app contains a WASM module, which is based on the [ocrs crate](https://crate
 
 
 ### Language detection
-The [Lingua crate](https://crates.io/crates/lingua), of the [lingua-rs project](https://github.com/pemistahl/lingua-rs) is used to detect the language of captured text.
+The [Lingua crate](https://crates.io/crates/lingua), of the [lingua-rs project](https://github.com/pemistahl/lingua-rs), is used to detect the language of captured text.
 
 
 ### Fine-tuned OCR models
