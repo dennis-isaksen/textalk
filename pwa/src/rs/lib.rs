@@ -61,7 +61,7 @@ pub async fn capture_and_ocr(detection_model_bytes: Vec<u8>, recognition_model_b
     let detection_model = Model::load(detection_model_bytes).map_err(|e| JsValue::from_str(&e.to_string()))?;
     let recognition_model = Model::load(recognition_model_bytes).map_err(|e| JsValue::from_str(&e.to_string()))?;
 
-    let da_alphabet = String::from(" 0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~EABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÆØÅæøå");
+    let da_alphabet = String::from(" 0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~EABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÆØÅÄÖÜßÑÉÈÇÃÀÌÒÙæøåäöüñéèçãàìòùÁáÉéÍíÓóÚú");
     
     let ocr_engine = OcrEngine::new(OcrEngineParams {
         detection_model: Some(detection_model),
